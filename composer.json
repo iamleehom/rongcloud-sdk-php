@@ -1,0 +1,26 @@
+{
+  "name"       : "leehom1988/rongcloud-sdk-php",
+  "description": "融云服务端SDK，使用PHP实现",
+  "keywords"   : [
+    "rongcloud-sdk-php",
+    "融云SDK",
+    "融云"
+  ],
+  "homepage"   : "https://github.com/leehom1988/rongcloud-sdk-php",
+  "license"    : "MIT",
+  "authors"    : [
+    {
+      "name" : "LeeHom",
+      "email": "lh411937409@gmail.com"
+    }
+  ],
+  "require"    : {
+    "php": ">=5.6.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload"   : {
+    "psr-4": {
+      "LeeHom\\RongCloud\\": "src/"
+    }
+  }
+}
