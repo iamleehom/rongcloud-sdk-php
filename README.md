@@ -1,4 +1,8 @@
 # RongCloud PHP SDK
+[![Latest Stable Version](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/v/stable)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
+[![Total Downloads](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/downloads)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
+[![Latest Unstable Version](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/v/unstable)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
+[![License](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/license)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
 
 融云服务端SDK，使用PHP实现。
 
@@ -44,4 +48,4 @@ Hope it can help You,Just Enjoy It! 😁😁😁😁
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
