@@ -2,7 +2,7 @@
 [![Latest Stable Version](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/v/stable)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
 [![Total Downloads](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/downloads)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
 [![Latest Unstable Version](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/v/unstable)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
-[![License](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/license)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php)
+[![License](https://poser.pugx.org/leehom1988/rongcloud-sdk-php/license)](https://packagist.org/packages/leehom1988/rongcloud-sdk-php) [![Join the chat at https://gitter.im/rongcloud-sdk-php/Lobby](https://badges.gitter.im/rongcloud-sdk-php/Lobby.svg)](https://gitter.im/rongcloud-sdk-php/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 融云服务端SDK，使用PHP实现。
 
