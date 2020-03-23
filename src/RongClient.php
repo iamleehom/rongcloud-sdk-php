@@ -23,9 +23,9 @@ use GuzzleHttp\Client;
 class RongClient
 {
     // app version
-    const   APP_VERSION = '1.0.0';
+    const   APP_VERSION = '1.0.2';
     //IM服务地址
-    const   IM_API_URL = 'http://api.cn.ronghub.com';
+    const   IM_API_URL = 'https://api-cn.ronghub.com';
     //短信服务地址
     const   SMS_API_URL = 'http://api.sms.ronghub.com';
 
