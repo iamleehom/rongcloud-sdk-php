@@ -264,7 +264,6 @@ class ChatRoom
         return $ret->getBody()->getContents();
     }
 
-
     /**
      * 加入聊天室方法
      *
@@ -609,7 +608,6 @@ class ChatRoom
         return $ret->getBody()->getContents();
     }
 
-
     /**
      * 添加聊天室白名单成员方法
      *
@@ -636,6 +634,73 @@ class ChatRoom
             ];
 
             $ret = $this->client->request('POST', $this->url . '/chatroom/user/whitelist/add.' . $this->format, ['form_params' => $params]);
+            if (empty($ret) || is_null($ret)) {
+                throw new RongCloudException('Bad request');
+            }
+        } catch (\Exception $e) {
+            throw new RongCloudException($e->getMessage());
+        }
+
+        return $ret->getBody()->getContents();
+    }
+
+    /**
+     * 移除聊天室白名单成员方法
+     *
+     * @param string $chatroomId 聊天室中用户 Id，可提交多个，聊天室中白名单用户最多不超过 5 个。（必传）
+     * @param string $userId     聊天室 Id。（必传）
+     * @return mixed|null|\Psr\Http\Message\ResponseInterface
+     * @throws RongCloudException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function removeWhiteListUser($chatroomId = '', $userId = '')
+    {
+        $ret = null;
+        try {
+            if (empty($chatroomId)) {
+                throw new RongCloudException('Parameters "chatroomId" is required');
+            }
+            if (empty($userId)) {
+                throw new RongCloudException('Parameters "userId" is required');
+            }
+
+            $params = [
+                'chatroomId' => $chatroomId,
+                'userId'     => $userId
+            ];
+
+            $ret = $this->client->request('POST', $this->url . '/chatroom/user/whitelist/remove.' . $this->format, ['form_params' => $params]);
+            if (empty($ret) || is_null($ret)) {
+                throw new RongCloudException('Bad request');
+            }
+        } catch (\Exception $e) {
+            throw new RongCloudException($e->getMessage());
+        }
+
+        return $ret->getBody()->getContents();
+    }
+
+    /**
+     * 查询聊天室白名单成员方法
+     *
+     * @param string $chatroomId 聊天室中用户 Id，可提交多个，聊天室中白名单用户最多不超过 5 个。（必传）
+     * @return mixed|null|\Psr\Http\Message\ResponseInterface
+     * @throws RongCloudException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function queryWhiteListUser($chatroomId = '')
+    {
+        $ret = null;
+        try {
+            if (empty($chatroomId)) {
+                throw new RongCloudException('Parameters "chatroomId" is required');
+            }
+
+            $params = [
+                'chatroomId' => $chatroomId
+            ];
+
+            $ret = $this->client->request('POST', $this->url . '/chatroom/user/whitelist/query.' . $this->format, ['form_params' => $params]);
             if (empty($ret) || is_null($ret)) {
                 throw new RongCloudException('Bad request');
             }
